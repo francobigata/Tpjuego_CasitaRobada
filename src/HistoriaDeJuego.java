@@ -21,7 +21,7 @@ public class HistoriaDeJuego {
         repartirCartas();
     }
 
-    private void repartirCartas() {
+    public void repartirCartas() {
         int cantidadCartasPorJugador = 3;
         for (int i = 0; i < cantidadCartasPorJugador; i++) {
             for (Jugador jugador : jugadores) {
@@ -39,7 +39,7 @@ public class HistoriaDeJuego {
 
 
 
-    private boolean verificarFinJuego() {
+    public boolean verificarFinJuego() {
         if (mazo.isEmpty()) {
             return true;
         }
@@ -52,7 +52,7 @@ public class HistoriaDeJuego {
         return false;
     }
 
-    private void declararGanador() {
+    public void declararGanador() {
         Jugador ganador = jugadores.get(0);
         for (Jugador jugador : jugadores) {
             if (jugador.getPuntos() > ganador.getPuntos()) {

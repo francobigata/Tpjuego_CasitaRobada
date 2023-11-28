@@ -169,9 +169,9 @@ public class Jugador {
     }
 
 
-    public Carta mostrarCarta(int index) {
-        if (index >= 0 && index < mano.size()) {
-            return mano.get(index);
+    public Carta mostrarCarta(int indice) {
+        if (indice >= 0 && indice < mano.size()) {
+            return mano.get(indice);
         } else {
             System.out.println("Índice de carta no válido.");
             return null;

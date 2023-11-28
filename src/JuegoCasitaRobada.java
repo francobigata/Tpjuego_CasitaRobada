@@ -1,9 +1,11 @@
 import java.util.List;
 import java.util.Scanner;
 
-public class Main {
+public class JuegoCasitaRobada {
 
-
+    private Mazo mazo;
+    private List<Jugador> jugadores;
+    private Mesa mesa;
 
     public static void main(String[] args) {
 
